@@ -1,0 +1,47 @@
+{
+    "name": "walkboy/yii2-hcaptcha",
+    "description": "Yii2 hCaptcha widget",
+    "keywords": ["yii2", "captcha", "hcaptcha", "widget"],
+    "type": "library",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/wa1kb0y/yii2-hcaptcha",
+        "issues": "https://github.com/himiklab/yii2-hcaptcha/issues"
+    },
+    "authors": [
+        {
+            "name": "Walkboy",
+            "homepage": "https://github.com/wa1kb0y/"
+        },
+        {
+            "name": "HimikLab",
+            "homepage": "https://github.com/himiklab/"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "yiisoft/yii2": "^2.0.11",
+        "yiisoft/yii2-httpclient": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5.58"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "sort-packages": true,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "walkboy\\hcaptcha\\": "src/",
+            "walkboy\\hcaptcha\\tests\\": "tests/"
+        }
+    }
+}
