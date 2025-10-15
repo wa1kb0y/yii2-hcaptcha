@@ -325,9 +325,9 @@ class HCaptcha extends InputWidget
         if (!$this->siteKey) {
             if ($config && $config->siteKey) {
                 $this->siteKey = $config->siteKey;
-                return;
+            } else {
+                throw new InvalidConfigException('Required `siteKey` param isn\'t set.');
             }
-            throw new InvalidConfigException('Required `siteKey` param isn\'t set.');
         }
 
         if (!$this->jsApiUrl) {
