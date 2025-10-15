@@ -111,5 +111,9 @@ abstract class HCaptchaBaseValidator extends Validator
                 $this->httpClientRequest = (new HttpClient())->createRequest();
             }
         }
+
+        if ($this->httpClientRequest->client === null) {
+            $this->httpClientRequest->client = new HttpClient();
+        }
     }
 }

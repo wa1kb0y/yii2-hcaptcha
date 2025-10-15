@@ -12,7 +12,7 @@ use yii\base\Exception;
 use yii\base\InvalidConfigException;
 use yii\base\InvalidArgumentException;
 use yii\base\Model;
-use yii\httpclient\Request;
+use yii\httpclient\Request as HttpRequest;
 use yii\web\View;
 
 /**
@@ -30,7 +30,7 @@ class HCaptchaValidator extends HCaptchaBaseValidator
         $secret = null,
         $siteVerifyUrl = null,
         $checkHostName = null,
-        ?Request $httpClientRequest = null,
+        ?HttpRequest $httpClientRequest = null,
         $config = []
     )
     {
